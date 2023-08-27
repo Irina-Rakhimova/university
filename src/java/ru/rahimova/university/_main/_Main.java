@@ -15,7 +15,5 @@ public class _Main {
         teacher.study(teacher);
         student.communicate(student);
         student.study(student);
-
-
     }
 }
