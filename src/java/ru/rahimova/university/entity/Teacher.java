@@ -1,17 +1,18 @@
 package ru.rahimova.university.entity;
 
+import ru.rahimova.university.service.Studiable;
+import ru.rahimova.university.service.Working;
+
 public class Teacher implements Studiable, Working {
-    String learner;
-    String work;
+    String learner = "Учащийся";
+    String work = "работать";
 
-    @Override
-    public void study() {
-        System.out.println("Я учитель, и я люблю обучать!");
+    public void work(Working working) {
+        System.out.println("Я учитель, и я люблю " + work);
     }
 
     @Override
-    public void work() {
-        System.out.println("И еще я люблю работать!");
+    public void study(Studiable studiable) {
+        System.out.println(learner + " обучается, благодаря мне");
     }
-
 }

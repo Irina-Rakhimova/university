@@ -1,8 +1,8 @@
 package ru.rahimova.university.entity;
 
 public class University {
-    String employee;
-    String learner;
+    String employee = "Работник";
+    String learner = "Учащийся";
 
 
 
