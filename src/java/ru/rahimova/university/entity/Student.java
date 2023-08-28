@@ -4,8 +4,8 @@ import ru.rahimova.university.service.Communicatable;
 import ru.rahimova.university.service.Studiable;
 
 public class Student implements Studiable, Communicatable {
-    String teacher = "учитель";
-    String education = "образование";
+    University university;
+    Teacher teacher;
 
     @Override
     public void communicate(Communicatable communicatable){
@@ -14,6 +14,6 @@ public class Student implements Studiable, Communicatable {
 
     @Override
     public void study(Studiable studiable) {
-        System.out.println("И еще я люблю учиться! Ведь только " + teacher + " может помочь мне получить " + education);
+        System.out.println("И еще я люблю учиться!");
     }
 }
